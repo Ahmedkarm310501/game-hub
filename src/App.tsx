@@ -1,9 +1,14 @@
 import "./App.css";
+import NavBar from "./components/NavBar";
 
 function App() {
   return (
-    <div className="bg-sky-500">
-      <h1 className="text-4xl text-center p-2">Hello World</h1>
+    <div className="grid grid-cols-2">
+      <div className=" col-span-full">
+        <NavBar />
+      </div>
+      <div className="bg-orange-500 hidden md:block">aside</div>
+      <div className="bg-lime-500 col-span-full md:col-auto">main</div>
     </div>
   );
 }

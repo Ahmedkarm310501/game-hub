@@ -1,9 +1,10 @@
 import logo from "../assets/logo.webp";
+import ColorModeSwitch from "./ColorModeSwitch";
 const NavBar = () => {
   return (
-    <div className="flex items-center">
+    <div className="flex items-center justify-between">
       <img src={logo} className="w-16 h-16" />
-      <h1 className="text-4xl">Nav bar</h1>
+      <ColorModeSwitch />
     </div>
   );
 };

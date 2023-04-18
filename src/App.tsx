@@ -4,13 +4,15 @@ import NavBar from "./components/NavBar";
 
 function App() {
   return (
-    <div className="grid grid-cols-2 bg-primary">
-      <div className="col-span-full">
+    <div className=" bg-primary">
+      <div className="">
         <NavBar />
       </div>
-      <div className="bg-orange-500 hidden md:block">aside</div>
-      <div className="bg-lime-500 col-span-full md:col-auto">
-        <GameGrid/>
+      <div className="flex">
+        <div className=" hidden md:block md:w-1/5 ">aside</div>
+        <div className=" w-full md:w-4/5 ">
+          <GameGrid />
+        </div>
       </div>
     </div>
   );

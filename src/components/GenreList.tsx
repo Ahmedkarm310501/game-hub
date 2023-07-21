@@ -5,9 +5,10 @@ import { Genre } from "../hooks/useGeneres";
 
 interface Props {
   onSelectGenre: (genre: Genre) => void;
+  selectedGenre: Genre | null;
 }
 
-const GenreList = ({ onSelectGenre }: Props) => {
+const GenreList = ({ onSelectGenre, selectedGenre }: Props) => {
   const { data: genres, isLoading } = useGeneres();
 
   return (
@@ -22,6 +23,7 @@ const GenreList = ({ onSelectGenre }: Props) => {
             key={genre.id}
             genre={genre}
             onSelectGenre={onSelectGenre}
+            selectedGenre={selectedGenre}
           />
         ))}
       </ul>
@@ -32,9 +34,11 @@ const GenreList = ({ onSelectGenre }: Props) => {
 const GenreItem = ({
   genre,
   onSelectGenre,
+  selectedGenre,
 }: {
   genre: Genre;
   onSelectGenre: (genre: Genre) => void;
+  selectedGenre: Genre | null;
 }) => {
   const handleClick = () => {
     console.log(genre);
@@ -48,7 +52,9 @@ const GenreItem = ({
         className="w-8 h-8 rounded-lg"
       />
       <span
-        className="ml-2 hover:underline hover:cursor-pointer"
+        className={`ml-2 hover:underline hover:cursor-pointer ${
+          genre.id === selectedGenre?.id && "underline font-bold"
+        }`}
         onClick={handleClick}
       >
         {genre.name}

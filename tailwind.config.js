@@ -7,6 +7,7 @@ export default {
       colors: {
         primary: "#121212",
         secondary: "#202020",
+        hover: "#383838",
       },
     },
   },

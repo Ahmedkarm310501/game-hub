@@ -1,6 +1,5 @@
 import usePlatforms from "../hooks/usePlatforms";
 import { Platform } from "../hooks/usePlatforms";
-import { useState, useRef, useEffect } from "react";
 import Select from "./Select";
 
 interface Props {

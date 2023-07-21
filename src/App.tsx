@@ -18,7 +18,7 @@ function App() {
   const [gameQuery, setGameQuery] = useState<GameQuery>({} as GameQuery);
   return (
     <div className=" dark:bg-primary dark:text-white min-h-screen grid lg:grid-cols-[200px_1fr] gap-1 grid-rows-[auto_1fr]">
-      <div className="col-span-full shadow mb-3">
+      <div className="col-span-full shadow mb-3 p-2">
         <NavBar />
       </div>
       <div className="hidden lg:block p-4">
@@ -28,17 +28,20 @@ function App() {
         />
       </div>
       <div className=" dark:shadow-white p-4">
-        <div className="flex gap-2">
-          <PlatformSelector
-            onSelectPlatform={(platform) =>
-              setGameQuery({ ...gameQuery, platform })
-            }
-          />
-          <SortSelector
-            onSelectSort={(sortOrder) =>
-              setGameQuery({ ...gameQuery, sortOrder })
-            }
-          />
+        <div className="flex gap-2 flex-col">
+          <h1 className="text-4xl font-bold">Games</h1>
+          <div className="flex gap-4">
+            <PlatformSelector
+              onSelectPlatform={(platform) =>
+                setGameQuery({ ...gameQuery, platform })
+              }
+            />
+            <SortSelector
+              onSelectSort={(sortOrder) =>
+                setGameQuery({ ...gameQuery, sortOrder })
+              }
+            />
+          </div>
         </div>
         <GameGrid gameQuery={gameQuery} />
       </div>

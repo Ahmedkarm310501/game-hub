@@ -1,6 +1,7 @@
 import { Game } from "../hooks/useGames";
 import getCroppedImageUrl from "../services/image-url";
 import CriticScore from "./CriticScore";
+import Emoji from "./Emoji";
 import PlatformiconList from "./PlatformiconList";
 
 interface Props {
@@ -23,6 +24,7 @@ const GameCard = ({ game }: Props) => {
           <CriticScore score={game.metacritic} />
         </div>
         <h3 className="text-2xl">{game.name}</h3>
+        <Emoji rating={game.rating_top} />
       </div>
     </div>
   );

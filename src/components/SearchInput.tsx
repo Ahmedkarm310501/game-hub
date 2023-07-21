@@ -29,7 +29,7 @@ export default function SearchInput({ onSearch }: Props) {
         }}
         type="search"
         placeholder="Search games...."
-        className="pl-14 pr-2 rounded-3xl shadow bg-secondary w-full p-2 hover:bg-hover focus:outline-hover focus:bg-primary"
+        className="pl-14 pr-2 rounded-3xl bg-secondaryLight hover:bg-hoverLight dark:bg-secondary w-full p-2 dark:hover:bg-hover dark:focus:outline-hover dark:focus:bg-primary"
       />
     </div>
   );

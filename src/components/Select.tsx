@@ -36,7 +36,7 @@ const Select = ({ name, data, onSelect }: Props) => {
     <span className="inline-block" ref={menuRef}>
       <button
         type="button"
-        className="flex items-center px-4 py-2 rounded-md bg-secondary  shadow-sm  hover:bg-hover"
+        className="flex items-center px-4 py-2 rounded-md bg-secondaryLight hover:bg-hoverLight dark:bg-secondary  shadow-sm  dark:hover:bg-hover"
         onClick={toggleMenu}
         aria-expanded={isMenuOpen}
       >
@@ -44,10 +44,13 @@ const Select = ({ name, data, onSelect }: Props) => {
         <BsChevronDown className="ml-2 h-5 w-5" />
       </button>
       {isMenuOpen && (
-        <div className="absolute z-10 mt-2 w-40 rounded-md shadow-lg bg-secondary ring-1 ring-black ring-opacity-5">
+        <div className="absolute z-10 mt-2 w-40 rounded-md shadow-lg bg-secondaryLight dark:bg-secondary ring-1 ring-black ring-opacity-5">
           <ul className="py-1">
             {data.map((item) => (
-              <li key={item.id} className=" hover:bg-hover">
+              <li
+                key={item.id}
+                className=" dark:hover:bg-hover hover:bg-hoverLight"
+              >
                 <button
                   type="button"
                   className=" block px-4 py-2 text-sm w-full text-left"

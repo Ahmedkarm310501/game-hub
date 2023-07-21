@@ -13,7 +13,7 @@ const GenreList = ({ onSelectGenre, selectedGenre }: Props) => {
 
   return (
     <>
-      <h1 className="text-3xl font-bold mb-4">Genres</h1>
+      <h1 className="text-2xl font-bold mb-4">Genres</h1>
       <ul>
         {isLoading &&
           Array.from({ length: 15 }).map((_, i) => <GenreSkeleton key={i} />)}
@@ -41,7 +41,6 @@ const GenreItem = ({
   selectedGenre: Genre | null;
 }) => {
   const handleClick = () => {
-    console.log(genre);
     onSelectGenre(genre);
   };
   return (
@@ -49,7 +48,7 @@ const GenreItem = ({
       <img
         src={getCroppedImageUrl(genre.image_background)}
         alt={genre.name}
-        className="w-8 h-8 rounded-lg"
+        className="w-8 h-8 rounded-lg object-cover"
       />
       <span
         className={`ml-2 hover:underline hover:cursor-pointer ${

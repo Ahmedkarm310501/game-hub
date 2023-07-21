@@ -10,7 +10,7 @@ interface Props {
 
 const GameCard = ({ game }: Props) => {
   return (
-    <div className="bg-secondary rounded-lg overflow-hidden transform transition-transform hover:scale-105">
+    <div className="bg-secondaryLight shadow-slate-100 dark:bg-secondary  rounded-lg overflow-hidden transform transition-transform hover:scale-105">
       <img
         src={getCroppedImageUrl(game.background_image)}
         alt={game.name}

@@ -9,7 +9,7 @@ import {
 import { MdPhoneIphone } from "react-icons/md";
 import { SiNintendo } from "react-icons/si";
 import { BsGlobe } from "react-icons/bs";
-import { Platform } from "../hooks/useGames";
+import { Platform } from "../hooks/usePlatforms";
 import { IconType } from "react-icons";
 import React from "react";
 
@@ -33,7 +33,7 @@ const PlatformiconList = ({ platform }: Props) => {
     <div className="flex gap-3 mt-2">
       {platform.map((platform) => {
         const Icon = platformIcons[platform.slug];
-        return <Icon key={platform.id} className="text-gray-500" />;
+        if (Icon) return <Icon key={platform.id} className="text-gray-500" />;
       })}
     </div>
   );

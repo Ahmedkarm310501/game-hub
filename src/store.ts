@@ -3,7 +3,7 @@ import { create } from "zustand";
 interface GameQuery {
   genreId?: number;
   platformId?: number;
-  sortOrder?: { id: string; name: string; value: string };
+  sortOrder?: { id: number; name: string; value: string };
   searchText?: string;
 }
 
@@ -13,7 +13,7 @@ interface GameQueryStore {
   setGenreId: (genreId: number) => void;
   setPlatformId: (platformId: number) => void;
   setSortOrder: (sortOrder: {
-    id: string;
+    id: number;
     name: string;
     value: string;
   }) => void;

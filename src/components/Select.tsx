@@ -5,12 +5,13 @@ interface Props {
   name: string;
   data: any[];
   onSelect?: (item: any) => void;
+  selectedItemId?: number;
 }
 
-const Select = ({ name, data, onSelect }: Props) => {
+const Select = ({ name, data, onSelect, selectedItemId }: Props) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const menuRef = useRef<HTMLDivElement>(null);
-  const [selectedItem, setSelectedItem] = useState<string | null>(null);
+  // const [selectedItem, setSelectedItem] = useState<string | null>(null);
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
@@ -31,6 +32,8 @@ const Select = ({ name, data, onSelect }: Props) => {
   const closeMenu = () => {
     setIsMenuOpen(false);
   };
+
+  const selectedItem = data.find((item) => item.id === selectedItemId)?.name;
 
   return (
     <span className="inline-block" ref={menuRef}>
@@ -56,7 +59,7 @@ const Select = ({ name, data, onSelect }: Props) => {
                   className=" block px-4 py-2 text-sm w-full text-left"
                   onClick={() => {
                     onSelect && onSelect(item);
-                    setSelectedItem(item.name);
+
                     closeMenu();
                   }}
                 >

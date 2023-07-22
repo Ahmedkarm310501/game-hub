@@ -5,10 +5,10 @@ import { Genre } from "../hooks/useGeneres";
 
 interface Props {
   onSelectGenre: (genre: Genre) => void;
-  selectedGenre: Genre | null;
+  selectedGenreId?: number;
 }
 
-const GenreList = ({ onSelectGenre, selectedGenre }: Props) => {
+const GenreList = ({ onSelectGenre, selectedGenreId }: Props) => {
   const { data: genres, isLoading } = useGeneres();
 
   return (
@@ -23,7 +23,7 @@ const GenreList = ({ onSelectGenre, selectedGenre }: Props) => {
             key={genre.id}
             genre={genre}
             onSelectGenre={onSelectGenre}
-            selectedGenre={selectedGenre}
+            selectedGenreId={selectedGenreId}
           />
         ))}
       </ul>
@@ -34,11 +34,11 @@ const GenreList = ({ onSelectGenre, selectedGenre }: Props) => {
 const GenreItem = ({
   genre,
   onSelectGenre,
-  selectedGenre,
+  selectedGenreId,
 }: {
   genre: Genre;
   onSelectGenre: (genre: Genre) => void;
-  selectedGenre: Genre | null;
+  selectedGenreId?: number;
 }) => {
   const handleClick = () => {
     onSelectGenre(genre);
@@ -52,7 +52,7 @@ const GenreItem = ({
       />
       <span
         className={`ml-2 hover:underline hover:cursor-pointer ${
-          genre.id === selectedGenre?.id && "underline font-bold"
+          genre.id === selectedGenreId && "underline font-bold"
         }`}
         onClick={handleClick}
       >

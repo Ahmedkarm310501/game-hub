@@ -10,8 +10,8 @@ import SortSelector from "./components/SortSelector";
 import GameHeading from "./components/GameHeading";
 
 export interface GameQuery {
-  genre: Genre | null;
-  platform: Platform | null;
+  genreId?: number;
+  platformId?: number;
   sortOrder: { id: string; name: string; value: string } | null;
   searchText: string | null;
 }
@@ -27,8 +27,10 @@ function App() {
       </div>
       <div className="hidden lg:block p-4">
         <GenreList
-          onSelectGenre={(genre) => setGameQuery({ ...gameQuery, genre })}
-          selectedGenre={gameQuery.genre}
+          onSelectGenre={(genre) =>
+            setGameQuery({ ...gameQuery, genreId: genre.id })
+          }
+          selectedGenreId={gameQuery.genreId}
         />
       </div>
       <div className=" dark:shadow-white p-4">
@@ -38,7 +40,7 @@ function App() {
           <div className="flex gap-4">
             <PlatformSelector
               onSelectPlatform={(platform) =>
-                setGameQuery({ ...gameQuery, platform })
+                setGameQuery({ ...gameQuery, platformId: platform.id })
               }
             />
             <SortSelector

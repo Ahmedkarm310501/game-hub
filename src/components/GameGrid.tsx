@@ -34,12 +34,12 @@ export default function GameGrid() {
       next={() => fetchNextPage()}
       hasMore={!!hasNextPage}
       loader={
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 py-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2  lg:grid-cols-4 gap-4 py-4">
           {LoadingComponent}
         </div>
       }
     >
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 py-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2  lg:grid-cols-4 gap-4 py-4">
         {isLoading && LoadingComponent}
 
         {games?.pages.map((page, index) => (

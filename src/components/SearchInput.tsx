@@ -1,12 +1,11 @@
 import { useRef } from "react";
 import { BsSearch } from "react-icons/bs";
+import useGameQueryStore from "../store";
 
-interface Props {
-  onSearch: (searchTerm: string) => void;
-}
-
-export default function SearchInput({ onSearch }: Props) {
+export default function SearchInput() {
   const inputRef = useRef<HTMLInputElement>(null);
+
+  const onSearch = useGameQueryStore((state) => state.setSearchText);
 
   function onSubmit(e: any) {
     if (inputRef.current) {

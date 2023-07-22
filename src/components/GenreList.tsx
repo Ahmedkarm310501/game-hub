@@ -2,13 +2,9 @@ import useGeneres from "../hooks/useGeneres";
 import getCroppedImageUrl from "../services/image-url";
 import GenreSkeleton from "./GenreSkeleton";
 import { Genre } from "../hooks/useGeneres";
+import useGameQueryStore from "../store";
 
-interface Props {
-  onSelectGenre: (genre: Genre) => void;
-  selectedGenreId?: number;
-}
-
-const GenreList = ({ onSelectGenre, selectedGenreId }: Props) => {
+const GenreList = () => {
   const { data: genres, isLoading } = useGeneres();
 
   return (
@@ -19,29 +15,19 @@ const GenreList = ({ onSelectGenre, selectedGenreId }: Props) => {
           Array.from({ length: 15 }).map((_, i) => <GenreSkeleton key={i} />)}
 
         {genres?.results.map((genre) => (
-          <GenreItem
-            key={genre.id}
-            genre={genre}
-            onSelectGenre={onSelectGenre}
-            selectedGenreId={selectedGenreId}
-          />
+          <GenreItem key={genre.id} genre={genre} />
         ))}
       </ul>
     </>
   );
 };
 
-const GenreItem = ({
-  genre,
-  onSelectGenre,
-  selectedGenreId,
-}: {
-  genre: Genre;
-  onSelectGenre: (genre: Genre) => void;
-  selectedGenreId?: number;
-}) => {
+const GenreItem = ({ genre }: { genre: Genre }) => {
+  const onSelectGenre = useGameQueryStore((state) => state.setGenreId);
+  const selectedGenreId = useGameQueryStore((state) => state.gameQuery.genreId);
+
   const handleClick = () => {
-    onSelectGenre(genre);
+    onSelectGenre(genre.id);
   };
   return (
     <li className="flex px-2 py-1  items-center">

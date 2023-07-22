@@ -1,3 +1,4 @@
+import useGameQueryStore from "../store";
 import Select from "./Select";
 
 const data = [
@@ -9,9 +10,10 @@ const data = [
   { id: 5, name: "Average Rating", value: "-rating" },
 ];
 
-interface Props {
-  onSelectSort: (sort: { id: string; name: string; value: string }) => void;
-}
-export default function SortSelector({ onSelectSort }: Props) {
+// interface Props {
+//   onSelectSort: (sort: { id: string; name: string; value: string }) => void;
+// }
+export default function SortSelector() {
+  const onSelectSort = useGameQueryStore((state) => state.setSortOrder);
   return <Select name="Sort By" data={data} onSelect={onSelectSort} />;
 }

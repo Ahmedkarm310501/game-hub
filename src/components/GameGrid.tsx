@@ -1,18 +1,13 @@
 import React from "react";
-import { GameQuery } from "../App";
 import useGames from "../hooks/useGames";
 
 import GameCard from "./GameCard";
 import InfiniteScroll from "react-infinite-scroll-component";
 import GameCardSkeleton from "./GameCardSkeleton";
+import useGameQueryStore from "../store";
 
-interface Props {
-  gameQuery: GameQuery;
-  // selectedGenre: Genre | null;
-  // selectedPlatform: Platform | null;
-}
-
-export default function GameGrid({ gameQuery }: Props) {
+export default function GameGrid() {
+  // const gameQuery = useGameQueryStore((state) => state.gameQuery);
   const {
     data: games,
     error,
@@ -20,7 +15,7 @@ export default function GameGrid({ gameQuery }: Props) {
     isFetchingNextPage,
     hasNextPage,
     fetchNextPage,
-  } = useGames(gameQuery);
+  } = useGames();
 
   if (error) return <h1>{error.message}</h1>;
 

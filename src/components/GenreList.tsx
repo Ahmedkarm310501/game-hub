@@ -18,7 +18,7 @@ const GenreList = ({ onSelectGenre, selectedGenre }: Props) => {
         {isLoading &&
           Array.from({ length: 15 }).map((_, i) => <GenreSkeleton key={i} />)}
 
-        {genres.map((genre) => (
+        {genres?.results.map((genre) => (
           <GenreItem
             key={genre.id}
             genre={genre}

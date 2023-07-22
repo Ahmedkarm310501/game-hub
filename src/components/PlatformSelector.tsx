@@ -9,7 +9,13 @@ interface Props {
 const PlatformSelector = ({ onSelectPlatform }: Props) => {
   const { data, error } = usePlatforms();
 
-  return <Select name="Platforms" data={data} onSelect={onSelectPlatform} />;
+  return (
+    <Select
+      name="Platforms"
+      data={data?.results || []}
+      onSelect={onSelectPlatform}
+    />
+  );
 };
 
 export default PlatformSelector;

@@ -8,12 +8,12 @@ const CriticScore = ({ score }: Props) => {
     score > 75 ? "bg-green-600" : score > 60 ? "bg-yellow-600" : "bg-red-600";
 
   return (
-    <div
-      className=" px-2 rounded-md font-bold text-sm"
+    <span
+      className=" px-2 rounded-md font-bold text-sm inline-block"
       style={{ backgroundColor: "#344038", color: "#9ae6b4" }}
     >
       {score}
-    </div>
+    </span>
   );
 };
 

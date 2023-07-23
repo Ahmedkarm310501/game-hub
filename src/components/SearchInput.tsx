@@ -1,15 +1,18 @@
 import { useRef } from "react";
 import { BsSearch } from "react-icons/bs";
 import useGameQueryStore from "../store";
+import { useNavigate } from "react-router-dom";
 
 export default function SearchInput() {
   const inputRef = useRef<HTMLInputElement>(null);
+  const navigate = useNavigate();
 
   const onSearch = useGameQueryStore((state) => state.setSearchText);
 
   function onSubmit(e: any) {
     if (inputRef.current) {
       onSearch(inputRef.current.value);
+      navigate("/");
     }
   }
 

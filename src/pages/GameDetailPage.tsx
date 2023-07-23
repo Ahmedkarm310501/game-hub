@@ -16,12 +16,16 @@ function GameDetailPage() {
   if (error || !game) throw error;
 
   return (
-    <div className="col-span-full p-4">
-      <h1 className="font-bold mb-4 text-3xl">{game.name}</h1>
-      <ExpandableText>{game.description_raw}</ExpandableText>
-      <GameAttributes game={game} />
-      <GameTrailer gameId={game.id} />
-      <GameScreenshots gameId={game.id} />
+    <div className="col-span-full p-4 grid md:grid-cols-2 gap-2">
+      <div>
+        <h1 className="font-bold mb-4 text-3xl">{game.name}</h1>
+        <ExpandableText>{game.description_raw}</ExpandableText>
+        <GameAttributes game={game} />
+      </div>
+      <div>
+        <GameTrailer gameId={game.id} />
+        <GameScreenshots gameId={game.id} />
+      </div>
     </div>
   );
 }

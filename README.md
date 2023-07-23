@@ -10,6 +10,19 @@ Game Hub is a library for games that allows users to search for games by name, f
 
 Explore Game Hub through the live demo available at [https://game-hub-ahmed.vercel.app](https://game-hub-ahmed.vercel.app).
 
+## Technologies
+
+Game Hub is built using the following technologies:
+
+- React 18 with TypeScript
+- Tailwind CSS for styling
+- Zustand for state management
+- React Query for remote state management
+- React Router version 6 for navigation
+- rawg.io API for game data
+- Vite for development and production builds
+- Vercel for deployment
+
 ## Installation
 
 To run Game Hub on your local machine, follow these steps:
@@ -36,18 +49,6 @@ To run Game Hub on your local machine, follow these steps:
    ```
 5. Open [http://localhost:5173](http://localhost:5173) to view it in the browser.
 
-## Technologies
-
-Game Hub is built using the following technologies:
-
-- React 18 with TypeScript
-- Tailwind CSS for styling
-- Zustand for state management
-- React Query for remote state management
-- React Router version 6 for navigation
-- rawg.io API for game data
-- Vite for development and production builds
-- Vercel for deployment
 
 ## Acknowledgments
 

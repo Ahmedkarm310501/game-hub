@@ -15,40 +15,40 @@ Explore Game Hub through the live demo available at [https://game-hub-ahmed.verc
 To run Game Hub on your local machine, follow these steps:
 
 1. Clone the repository:
+
    ```bash
    git clone https://github.com/your-username/game-hub.git
-Alternatively, you can download the compressed file directly from GitHub.
+   Alternatively, you can download the compressed file directly from GitHub.
 
-Navigate to the project directory:
+   ```
 
-bash
-Copy code
-cd game-hub
-Install Dependencies:
+2. Navigate to the project directory:
+   ```bash
+   cd game-hub
+   ```
+3. Install the dependencies:
+   ```bash
+   npm install
+   ```
+4. Start the development server:
+   ```bash
+   npm run dev
+   ```
+5. Open [http://localhost:5173](http://localhost:5173) to view it in the browser.
 
-bash
-Copy code
-npm install
-Run the Project:
+## Technologies
 
-bash
-Copy code
-npm run dev
-Tech Stack
 Game Hub is built using the following technologies:
 
-React 18 with TypeScript
-Tailwind CSS for styling
-Zustand for state management
-React Query for remote state management
-React Router version 6 for navigation
-Contributing
-At the moment, we are not accepting external contributions. However, you are welcome to fork the repository and work on your own version of Game Hub.
+- React 18 with TypeScript
+- Tailwind CSS for styling
+- Zustand for state management
+- React Query for remote state management
+- React Router version 6 for navigation
+- rawg.io API for game data
+- Vite for development and production builds
+- Vercel for deployment
 
-License
-This project is currently not licensed.
-
-Acknowledgments
-Special thanks to the React team for their continuous efforts to improve the library and to the developers of Tailwind CSS, Zustand, and React Query for providing excellent tools that enhance the development experience.
+## Acknowledgments
 
 Thank you for using Game Hub! We hope you enjoy exploring various games and discovering new gaming experiences. If you encounter any issues or have suggestions for improvements, please feel free to create an issue in the repository. Happy gaming!

@@ -1,7 +1,7 @@
 import useGeneres from "../hooks/useGeneres";
 import getCroppedImageUrl from "../services/image-url";
 import GenreSkeleton from "./GenreSkeleton";
-import { Genre } from "../hooks/useGeneres";
+import { Genre } from "../entities/Genre";
 import useGameQueryStore from "../store";
 
 const GenreList = () => {

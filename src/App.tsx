@@ -6,30 +6,10 @@ import PlatformSelector from "./components/PlatformSelector";
 import SortSelector from "./components/SortSelector";
 import GameHeading from "./components/GameHeading";
 
+import { RouterProvider } from "react-router-dom";
+import router from "./routes";
 function App() {
-  return (
-    <div className=" dark:bg-primary dark:text-white min-h-screen grid sm:grid-cols-[200px_1fr] gap-1 grid-rows-[auto_1fr]">
-      <div className="col-span-full shadow mb-3 p-2">
-        <NavBar />
-      </div>
-
-      <div className="hidden sm:block p-4">
-        <GenreList />
-      </div>
-
-      <div className=" dark:shadow-white p-4">
-        <div className="flex gap-2 flex-col">
-          <GameHeading />
-
-          <div className="flex gap-4">
-            <PlatformSelector />
-            <SortSelector />
-          </div>
-        </div>
-        <GameGrid />
-      </div>
-    </div>
-  );
+  return <RouterProvider router={router} />;
 }
 
 export default App;

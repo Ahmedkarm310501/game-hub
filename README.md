@@ -14,14 +14,16 @@ Explore Game Hub through the live demo available at [https://game-hub-ahmed.verc
 
 Game Hub is built using the following technologies:
 
-- React 18 with TypeScript
-- Tailwind CSS for styling
-- Zustand for state management
-- React Query for remote state management
-- React Router version 6 for navigation
-- rawg.io API for game data
-- Vite for development and production builds
-- Vercel for deployment
+- ![React](https://img.shields.io/badge/React-18-blue?logo=react)
+- ![TypeScript](https://img.shields.io/badge/TypeScript-blue?logo=typescript)
+- ![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-blue?logo=tailwind-css)
+- ![Zustand](https://img.shields.io/badge/Zustand-blue?logo=zustand)
+- ![React Query](https://img.shields.io/badge/React%20Query-blue?logo=react-query)
+- ![React Router](https://img.shields.io/badge/React%20Router%20v6-blue?logo=react-router)
+- ![rawg.io API](https://img.shields.io/badge/rawg.io%20API-blue?logo=rawg.io)
+- ![Vite](https://img.shields.io/badge/Vite-blue?logo=vite)
+- ![Vercel](https://img.shields.io/badge/Vercel-blue?logo=vercel)
+
 
 ## Installation
 

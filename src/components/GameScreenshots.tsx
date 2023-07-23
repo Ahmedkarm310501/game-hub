@@ -1,4 +1,4 @@
-import useScreenshots from "../hooks/useScreenShots";
+import useScreenshots from "../hooks/useScreenshots";
 
 interface Props {
   gameId: number;

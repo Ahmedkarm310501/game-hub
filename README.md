@@ -14,15 +14,16 @@ Explore Game Hub through the live demo available at [https://game-hub-ahmed.verc
 
 Game Hub is built using the following technologies:
 
-- ![React](https://img.shields.io/badge/React-18-blue?style=for-the-badge&logo=react&logoColor=white)
-- ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
-- ![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
-- ![Zustand](https://img.shields.io/badge/Zustand-FFD400?style=for-the-badge&logo=zustand&logoColor=black)
-- ![React Query](https://img.shields.io/badge/React%20Query-FF4154?style=for-the-badge&logo=react-query&logoColor=white)
-- ![React Router](https://img.shields.io/badge/React%20Router%20v6-CA4245?style=for-the-badge&logo=react-router&logoColor=white)
-- ![rawg.io API](https://img.shields.io/badge/rawg.io%20API-FF6C00?style=for-the-badge&logo=rawg.io&logoColor=black)
-- ![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
-- ![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
+- ![React](https://img.shields.io/badge/React-18-61DAFB?style=for-the-badge&logo=react&logoColor=white) React 18 with TypeScript
+- ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white) TypeScript
+- ![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white) Tailwind CSS for styling
+- ![Zustand](https://img.shields.io/badge/Zustand-FFD400?style=for-the-badge&logo=zustand&logoColor=black) Zustand for state management
+- ![React Query](https://img.shields.io/badge/React%20Query-FF4154?style=for-the-badge&logo=react-query&logoColor=white) React Query for remote state management
+- ![React Router](https://img.shields.io/badge/React%20Router%20v6-CA4245?style=for-the-badge&logo=react-router&logoColor=white) React Router version 6 for navigation
+- ![rawg.io API](https://img.shields.io/badge/rawg.io%20API-FF6C00?style=for-the-badge&logo=rawg.io&logoColor=black) rawg.io API for game data
+- ![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white) Vite for development and production builds
+- ![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white) Vercel for deployment
+
 
 
 

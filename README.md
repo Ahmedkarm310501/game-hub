@@ -14,16 +14,41 @@ Explore Game Hub through the live demo available at [https://game-hub-ahmed.verc
 
 Game Hub is built using the following technologies:
 
-- <img src="https://img.shields.io/badge/React-18-61DAFB?style=for-the-badge&logo=react&logoColor=white" alt="React"> **React 18 with TypeScript**
-- <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript"> **TypeScript**
-- <img src="https://img.shields.io/badge/Tailwind%20CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="Tailwind CSS"> **Tailwind CSS for styling**
-- <img src="https://img.shields.io/badge/Zustand-FFD400?style=for-the-badge&logo=zustand&logoColor=black" alt="Zustand"> **Zustand for state management**
-- <img src="https://img.shields.io/badge/React%20Query-FF4154?style=for-the-badge&logo=react-query&logoColor=white" alt="React Query"> **React Query for remote state management**
-- <img src="https://img.shields.io/badge/React%20Router%20v6-CA4245?style=for-the-badge&logo=react-router&logoColor=white" alt="React Router"> **React Router version 6 for navigation**
-- <img src="https://img.shields.io/badge/rawg.io%20API-FF6C00?style=for-the-badge&logo=rawg.io&logoColor=black" alt="rawg.io API"> **rawg.io API for game data**
-- <img src="https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white" alt="Vite"> **Vite for development and production builds**
-- <img src="https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="Vercel"> **Vercel for deployment**
+<div style="display: flex; align-items: center;">
+  <img src="https://img.shields.io/badge/React-18-61DAFB?style=for-the-badge&logo=react&logoColor=white" alt="React"> <b>React 18 with TypeScript</b>
+</div>
 
+<div style="display: flex; align-items: center;">
+  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript"> <b>TypeScript</b>
+</div>
+
+<div style="display: flex; align-items: center;">
+  <img src="https://img.shields.io/badge/Tailwind%20CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="Tailwind CSS"> <b>Tailwind CSS for styling</b>
+</div>
+
+<div style="display: flex; align-items: center;">
+  <img src="https://img.shields.io/badge/Zustand-FFD400?style=for-the-badge&logo=zustand&logoColor=black" alt="Zustand"> <b>Zustand for state management</b>
+</div>
+
+<div style="display: flex; align-items: center;">
+  <img src="https://img.shields.io/badge/React%20Query-FF4154?style=for-the-badge&logo=react-query&logoColor=white" alt="React Query"> <b>React Query for remote state management</b>
+</div>
+
+<div style="display: flex; align-items: center;">
+  <img src="https://img.shields.io/badge/React%20Router%20v6-CA4245?style=for-the-badge&logo=react-router&logoColor=white" alt="React Router"> <b>React Router version 6 for navigation</b>
+</div>
+
+<div style="display: flex; align-items: center;">
+  <img src="https://img.shields.io/badge/rawg.io%20API-FF6C00?style=for-the-badge&logo=rawg.io&logoColor=black" alt="rawg.io API"> <b>rawg.io API for game data</b>
+</div>
+
+<div style="display: flex; align-items: center;">
+  <img src="https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white" alt="Vite"> <b>Vite for development and production builds</b>
+</div>
+
+<div style="display: flex; align-items: center;">
+  <img src="https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="Vercel"> <b>Vercel for deployment</b>
+</div>
 
 
 

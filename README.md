@@ -78,6 +78,4 @@ Alternatively, you can download the compressed file directly from GitHub.
    ```
 5. Open [http://localhost:5173](http://localhost:5173) to view it in the browser.
 
-## Acknowledgments
 
-Thank you for using Game Hub! We hope you enjoy exploring various games and discovering new gaming experiences. If you encounter any issues or have suggestions for improvements, please feel free to create an issue in the repository. Happy gaming!

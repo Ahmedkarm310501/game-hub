@@ -14,16 +14,15 @@ Explore Game Hub through the live demo available at [https://game-hub-ahmed.verc
 
 Game Hub is built using the following technologies:
 
-<!-- add icons -->
-
-- React 18 with TypeScript [https://reactjs.org](https://reactjs.org)
-- Tailwind CSS for styling [https://tailwindcss.com](https://tailwindcss.com)
-- Zustand for state management [https://zustand.surge.sh](https://zustand.surge.sh)
-- React Query for remote state management [https://react-query.tanstack.com](https://react-query.tanstack.com)
-- React Router version 6 for navigation [https://reactrouter.com](https://reactrouter.com)
-- rawg.io API for game data [https://rawg.io/apidocs](https://rawg.io/apidocs)
-- Vite for development and production builds [https://vitejs.dev](https://vitejs.dev)
-- Vercel for deployment [https://vercel.com](https://vercel.com)
+- ![React](https://img.shields.io/badge/React-18-blue?logo=react&logoColor=white)
+- ![TypeScript](https://img.shields.io/badge/TypeScript-blue?logo=typescript&logoColor=white)
+- ![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-blue?logo=tailwind-css&logoColor=white)
+- ![Zustand](https://img.shields.io/badge/Zustand-blue?logo=zustand&logoColor=white)
+- ![React Query](https://img.shields.io/badge/React%20Query-blue?logo=react-query&logoColor=white)
+- ![React Router](https://img.shields.io/badge/React%20Router%20v6-blue?logo=react-router&logoColor=white)
+- ![rawg.io API](https://img.shields.io/badge/rawg.io%20API-blue?logo=rawg.io&logoColor=white)
+- ![Vite](https://img.shields.io/badge/Vite-blue?logo=vite&logoColor=white)
+- ![Vercel](https://img.shields.io/badge/Vercel-blue?logo=vercel&logoColor=white)
 
 
 ## Installation

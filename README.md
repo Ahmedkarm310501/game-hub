@@ -61,9 +61,8 @@ To run Game Hub on your local machine, follow these steps:
 
    ```bash
    git clone https://github.com/Ahmedkarm310501/game-hub.git
-   Alternatively, you can download the compressed file directly from GitHub.
-
    ```
+Alternatively, you can download the compressed file directly from GitHub.
 
 2. Navigate to the project directory:
    ```bash

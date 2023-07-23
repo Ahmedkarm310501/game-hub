@@ -12,7 +12,12 @@ function GameDetailPage() {
   const { slug } = useParams();
   const { data: game, isLoading, error } = useGame(slug!);
 
-  if (isLoading) return <Spinner size="lg" />;
+  if (isLoading)
+    return (
+      <div className="col-span-full p-4 flex items-center justify-center">
+        <Spinner size="lg" />
+      </div>
+    );
   if (error || !game) throw error;
 
   return (

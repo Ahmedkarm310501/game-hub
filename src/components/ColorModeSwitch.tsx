@@ -15,12 +15,12 @@ const ColorModeSwitch = () => {
     }
   }, [isChecked]);
   return (
-    <div className="flex items-center p-4">
+    <div className="flex items-center p-4 flex-shrink-0">
       <label className={classes.switchToggle}>
         <input type="checkbox" checked={isChecked} onChange={toggleSwitch} />
         <span className={classes.slider}></span>
       </label>
-      <h3 className=" ml-2">Dark Mode</h3>
+      <h3 className=" ml-2">&nbsp;Dark Mode </h3>
     </div>
   );
 };

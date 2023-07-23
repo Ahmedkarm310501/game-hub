@@ -14,15 +14,16 @@ Explore Game Hub through the live demo available at [https://game-hub-ahmed.verc
 
 Game Hub is built using the following technologies:
 
-- React 18 with TypeScript
-- Tailwind CSS for styling
-- Zustand for state management
-- React Query for remote state management
-- React Router version 6 for navigation
-- rawg.io API for game data
-- Vite for development and production builds
-- Vercel for deployment
+<!-- add icons -->
 
+- React 18 with TypeScript [https://reactjs.org](https://reactjs.org)
+- Tailwind CSS for styling [https://tailwindcss.com](https://tailwindcss.com)
+- Zustand for state management [https://zustand.surge.sh](https://zustand.surge.sh)
+- React Query for remote state management [https://react-query.tanstack.com](https://react-query.tanstack.com)
+- React Router version 6 for navigation [https://reactrouter.com](https://reactrouter.com)
+- rawg.io API for game data [https://rawg.io/apidocs](https://rawg.io/apidocs)
+- Vite for development and production builds [https://vitejs.dev](https://vitejs.dev)
+- Vercel for deployment [https://vercel.com](https://vercel.com)
 
 
 ## Installation
@@ -50,7 +51,6 @@ To run Game Hub on your local machine, follow these steps:
    npm run dev
    ```
 5. Open [http://localhost:5173](http://localhost:5173) to view it in the browser.
-
 
 ## Acknowledgments
 
